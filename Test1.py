@@ -1,7 +1,6 @@
-import flet
+import flet as ft
 
-def main(page: flet.Page):
-  page.title("Hello World")
-  page.bgcolor("black")
+def main(page: ft.Page):
+    page.add(ft.Text(value="Hello, world!"))
 
-flet.app(target=main)
+ft.run(main)
